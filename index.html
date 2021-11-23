@@ -8,14 +8,28 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class = "back">
-        <p class = "heading">SIGN UP</p>
-        <p><input type = "text" placeholder = "Введите e-mail" class = "text-field__input" id = "email"></p>
-        <p><input type = "password" placeholder = "Введите пароль" class = "text-field__input" id = "password"></p>
-        <p><input type = "password" placeholder = "Подтвердите пароль" class = "text-field__input" id = "confirmpassword"></p>
-        <button class = "button" type = "submit" onclick = "registration()">Зарегистрироваться</button>
+    <div class="sign-up">
+        <div class="sign-up__body">
+            <div class="sign-up__title">Sign Up</div>
+            <div class="sign-up__input">
+                <div class="sign-up__email">
+                    <input type="text" placeholder="Введите e-mail" id="email" class="sign-up__input">
+                </div>
+                <div class="sign-up__password">
+                    <input type="password" id="password" placeholder="Введите пароль" class="sign-up__input">
+                </div>
+                <div class="sign-up__confirmpassword" >
+                    <input type="password" id="confirmpassword" placeholder="Подтвердите пароль" class="sign-up__input">
+                </div>
+            </div>
+            <div class="sign-up__error sign-up__error_style" id="error"></div>
+            <div class="sign-up__registration">
+                <button type="submit" onclick="registration()" class="sign-up__button">Зарегистрироваться</button>
+            </div>
+        </div>
+        <div class="sign-up__success"></div>
     </div>
-    
+
     <script src="./script.js"></script>
 </body>
 </html>
