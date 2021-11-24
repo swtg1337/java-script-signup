@@ -17,7 +17,7 @@ function success() {
 function registration(){
     let mail = document.getElementById('email').value;
     let password = document.getElementById('password').value;
-    let confirmpassword = document.getElementById('confirmpassword').value;
+    const confirmpassword = document.getElementById('confirmpassword').value;
     
     if (!mail || !password || !confirmpassword ){
         displayError ('Не все поля заполнены');
