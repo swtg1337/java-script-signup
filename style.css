@@ -2,11 +2,10 @@ body {
     background: -webkit-linear-gradient(90deg, #67c1f9,#5463d9,#8a17e8);
     background: linear-gradient(90deg, #67c1f9,#5463d9,#8a17e8); 
     text-align: center;
-    margin-top: 100px;  
+    margin: none;
 }
 
 .sign-up__title {
-    font-family: DejaVu Sans Mono, monospace;
     font-size: 30px;
     margin-bottom: 60px;
     background: linear-gradient(90deg, #67c1f9,#5463d9,#8a17e8);
@@ -15,6 +14,8 @@ body {
 }
 
 .sign-up__body {
+    font-family: DejaVu Sans Mono;  
+    margin-top: 100px;
     position: absolute;
     position: fixed; 
     left: 50%;
@@ -23,7 +24,7 @@ body {
     width: 230px;
     height: 400px;
     background: white;
-    border-radius: 1rem;
+    border-radius: 20px;
     align-content: center;
 }
 
@@ -47,14 +48,13 @@ body {
 .sign-up__button {
     margin-top: 30px;
     text-align: center;
-    padding: 0.375rem 0.75rem;
-    font-size: 0.95 rem;
-    border-radius: 1rem;
+    padding: 6px 12px;
+    font-size: 15px;
+    border-radius: 16px;
     background: -webkit-linear-gradient(90deg, #67c1f9,#5463d9,#8a17e8);
     background: linear-gradient(90deg, #67c1f9,#5463d9,#8a17e8); 
     color: rgb(255, 255, 255);
     border: 0px ;
-    font-family: DejaVu Sans Mono, monospace;
     text-shadow: 0.5px 0.5px gray;
 }
 
@@ -72,7 +72,7 @@ body {
     height: 40px;
     width: 250px;
     background-color: rgb(240, 232, 227);
-    border-radius: 1rem;
+    border-radius: 16px;
     margin: auto;           
 }   
 

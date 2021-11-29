@@ -15,8 +15,8 @@ function success() {
 }
 
 function registration(){
-    let mail = document.getElementById('email').value;
-    let password = document.getElementById('password').value;
+    const mail = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
     const confirmpassword = document.getElementById('confirmpassword').value;
     
     if (!mail || !password || !confirmpassword ){
@@ -25,17 +25,17 @@ function registration(){
         return;
     }
 
-    mail = mail.match(/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/);
+    let checkmail = mail.match(/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/);
 
-    if (!mail) {
+    if (!checkmail) {
         displayError('Введен некорректный e-mail!');
     
     return;
     }
 
-    password = password.match(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/g);
+    let checkpassword = password.match(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/g);
 
-    if (!password) {
+    if (!checkpassword) {
         displayError('Пароль должен состоять минимум из 8 символов, а также включать миниммум 1 символ верхнего регистра и 1 цифру');
 
         return;
